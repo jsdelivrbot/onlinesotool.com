@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all" />
-    <meta name="author" content="json..hust.cc" />
+    <meta name="author" content="onlinesotool.com" />
     <meta name="keywords" content="JSON, JSON online resolution, JSON formatting, JSON format validation, JSON to XML, XML to JSON"/>
     <meta name="description" content="Provide related Json analysis, verification, formatting, compression, editor, and Json to XML conversion services."/>
     <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
@@ -25,11 +25,7 @@
     <!-- Favicons -->
 </head>
 <body style="over-flow:hidden;">
-<div id="header">
-    <h1><a href="index.html">Online Tools</a></h1>
-</div>
-
-
+<div class="headerpage"></div>
 <main class="row-fluid">
     <div class="col-md-5" style="padding:0;">
         <textarea id="json-src" placeholder="Enter the JSON string or XML string here...."   class="form-control adapter_height"  style="height:550px;padding:20px;border:0;border-right:solid 1px #ddd;border-bottom:solid 1px #ddd;border-radius:0;resize: none; outline:none;"></textarea>
@@ -148,7 +144,14 @@ $(window).resize(function() {
 });
 $(window).resize();
 </script>
-<footer style="padding:20px;text-align:center;color:#999;">©2014 <a target="_blank" href="http://www.atool.org/">Hust.cc</a> All right reserved. Code from Json.cn
-</footer>
+<div class="footerpage"></div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".headerpage").load("../header.html");
+        $(".footerpage").load("../footer.html");
+    });
+</script>
 </body>
 </html>

@@ -18,9 +18,7 @@
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
   </head>
   <body>
-    <div id="header">
-      <h1><a href="index.html">Online Tools</a></h1>
-    </div>
+    <div class="headerpage"></div>
     <div id="body">
       <div id="index">
         <ul class="menu">
@@ -109,16 +107,23 @@
           <li>
             <div class="menu-group">Json</div>
           </li>
-          <li><a href="json-online-master/index.html">Json Convertor</a></li>
+        <li><a href="json-online-master/index.html">Json Convertor</a></li>
         </ul>
-		<ul class="menu">
+        <ul class="menu">
           <li>
             <div class="menu-group">Diff</div>
           </li>
           <li><a href="diff-online-master/index.html">Diff Master</a></li>
+
         </ul>
       </div>
     </div>
-    <div id="footer">&copy; 2017-2018 Online Tool</div>
+    <div class="footerpage"></div>
+    <script>
+        $(function(){
+            $(".headerpage").load("header.html");
+            $(".footerpage").load("footer.html");
+        });
+    </script>
   </body>
 </html>

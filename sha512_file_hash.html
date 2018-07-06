@@ -18,9 +18,7 @@
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
   </head>
   <body>
-    <div id="header">
-      <h1><a href="index.html">Online Tools</a></h1>
-    </div>
+    <div class="headerpage"></div>
     <div id="body">
       <script src="js/main.js"></script>
       <div id="main">
@@ -138,6 +136,14 @@
       <script src="https://rawgit.com/emn178/js-sha512/master/build/sha512.min.js"></script>
       <script>method = sha512;</script>
     </div>
-    <div id="footer">&copy; 2015-2017 Online Tools</div>
+    <div class="footerpage"></div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".headerpage").load("header.html");
+        $(".footerpage").load("footer.html");
+    });
+</script>
   </body>
 </html>
